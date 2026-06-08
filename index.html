@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>我的个人博客</title>
+    <meta
+      name="description"
+      content="一个记录写作、技术、学习和日常观察的个人博客。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#">我的博客</a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#posts">文章</a>
+        <a href="#about">关于</a>
+        <a href="#subscribe">订阅</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <img src="assets/hero-blog.png" alt="书桌、笔记本电脑和晨光构成的博客封面" />
+        <div class="hero-copy">
+          <p class="eyebrow">Writing / Tech / Life</p>
+          <h1 id="hero-title">把零散的思考，慢慢写成自己的地图。</h1>
+          <p>
+            这里会记录我对技术、阅读、生活和长期主义的观察。博客刚刚开始，
+            但每一篇都会尽量诚实、清楚、有一点温度。
+          </p>
+          <a class="button" href="#posts">开始阅读</a>
+        </div>
+      </section>
+
+      <section class="section intro" aria-label="博客简介">
+        <div>
+          <p class="section-label">最近在关注</p>
+          <h2>写作、工具、成长，以及那些值得反复琢磨的小事。</h2>
+        </div>
+        <p>
+          你可以把这里当作自己的数字花园：先写下来，再慢慢修剪。等内容变多后，
+          我们还可以继续加入分类、标签、搜索、评论、RSS 和部署。
+        </p>
+      </section>
+
+      <section class="section" id="posts" aria-labelledby="posts-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Latest Posts</p>
+            <h2 id="posts-title">最新文章</h2>
+          </div>
+          <button class="filter-button" type="button" data-filter="全部">全部</button>
+        </div>
+        <div class="tag-row" aria-label="文章分类筛选">
+          <button class="tag is-active" type="button" data-filter="全部">全部</button>
+          <button class="tag" type="button" data-filter="写作">写作</button>
+          <button class="tag" type="button" data-filter="技术">技术</button>
+          <button class="tag" type="button" data-filter="生活">生活</button>
+        </div>
+        <div class="post-grid" id="postGrid"></div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div>
+          <p class="section-label">About</p>
+          <h2 id="about-title">关于我</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            你好，我是这个博客的主人。这里先放一段占位介绍：我喜欢把复杂问题拆开，
+            也喜欢记录那些容易被忙碌冲散的想法。
+          </p>
+          <p>
+            之后你可以把这一段改成你的真实经历、职业方向、兴趣、正在学习的东西，
+            或者你希望读者如何认识你。
+          </p>
+        </div>
+      </section>
+
+      <section class="section subscribe" id="subscribe" aria-labelledby="subscribe-title">
+        <div>
+          <p class="section-label">Newsletter</p>
+          <h2 id="subscribe-title">订阅更新</h2>
+          <p>先留一个订阅入口。未来可以接入邮件服务或 RSS。</p>
+        </div>
+        <form class="subscribe-form">
+          <label for="email">邮箱地址</label>
+          <div>
+            <input id="email" type="email" placeholder="you@example.com" />
+            <button class="button" type="submit">订阅</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> 我的个人博客</p>
+      <a href="#">回到顶部</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
