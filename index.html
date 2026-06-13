@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>我的个人博客</title>
+    <title>小狗蛋你的博客</title>
     <meta
       name="description"
-      content="一个记录写作、技术、学习和日常观察的个人博客。"
+      content="小狗蛋你的个人博客，记录能源研究、ACG、AI 应用、学习日志和生活观察。"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#">我的博客</a>
+      <a class="brand" href="#">小狗蛋你的博客</a>
       <nav class="nav" aria-label="主导航">
         <a href="#posts">文章</a>
         <a href="#about">关于</a>
@@ -22,26 +22,28 @@
 
     <main>
       <section class="hero" aria-labelledby="hero-title">
-        <img src="assets/hero-blog.png" alt="书桌、笔记本电脑和晨光构成的博客封面" />
+        <img src="assets/hero-cover.jpg" alt="锁刃龙在冷光荒野中挣脱枷锁的博客封面" />
         <div class="hero-copy">
           <p class="eyebrow">Writing / Tech / Life</p>
-          <h1 id="hero-title">把零散的思考，慢慢写成自己的地图。</h1>
+          <h1 id="hero-title">狩猎笔记</h1>git add .
+git commit -m "Add learning log post"
+git push
+
           <p>
-            这里会记录我对技术、阅读、生活和长期主义的观察。博客刚刚开始，
-            但每一篇都会尽量诚实、清楚、有一点温度。
+            这里是小狗蛋你的狩猎笔记。每一个问题都是一头需要追踪的猎物：技术如古龙，庞杂而难以近身；阅读如密林，足迹时隐时现；
+            生活则是一片永远走不到尽头的荒野。先侦察，再靠近。每一篇，都是我在追踪途中留下的标记。
           </p>
-          <a class="button" href="#posts">开始阅读</a>
+          <a class="button" href="#posts">开始狩猎</a>
         </div>
       </section>
 
       <section class="section intro" aria-label="博客简介">
         <div>
           <p class="section-label">最近在关注</p>
-          <h2>写作、工具、成长，以及那些值得反复琢磨的小事。</h2>
+          <h2>ACG、AI 应用、就业，以及那些值得反复琢磨的小事。</h2>
         </div>
         <p>
-          你可以把这里当作自己的数字花园：先写下来，再慢慢修剪。等内容变多后，
-          我们还可以继续加入分类、标签、搜索、评论、RSS 和部署。
+          铭记每一次出发前的勇气，也记录每一次学习之后真正留下来的东西。
         </p>
       </section>
 
@@ -55,11 +57,19 @@
         </div>
         <div class="tag-row" aria-label="文章分类筛选">
           <button class="tag is-active" type="button" data-filter="全部">全部</button>
+          <button class="tag" type="button" data-filter="学习日志">学习日志</button>
           <button class="tag" type="button" data-filter="写作">写作</button>
           <button class="tag" type="button" data-filter="技术">技术</button>
           <button class="tag" type="button" data-filter="生活">生活</button>
         </div>
         <div class="post-grid" id="postGrid"></div>
+      </section>
+
+      <section class="section article-reader" id="articleReader" hidden>
+        <div class="article-shell">
+          <button class="article-close" type="button" id="closeArticle">关闭</button>
+          <article id="articleContent"></article>
+        </div>
       </section>
 
       <section class="section about" id="about" aria-labelledby="about-title">
@@ -69,12 +79,14 @@
         </div>
         <div class="about-copy">
           <p>
-            你好，我是这个博客的主人。这里先放一段占位介绍：我喜欢把复杂问题拆开，
-            也喜欢记录那些容易被忙碌冲散的想法。
+            我是小狗蛋你，山东大学学士，香港大学硕士，研究能源工程领域。
           </p>
           <p>
-            之后你可以把这一段改成你的真实经历、职业方向、兴趣、正在学习的东西，
-            或者你希望读者如何认识你。
+            「我曾盗取天火，被缚于高加索山。<br />
+            也曾独面古龙，在瘴气之谷磨刀。<br />
+            <br />
+            如今我只是一名刚毕业的能源研究生。<br />
+            但请相信我，我还在燃烧。」
           </p>
         </div>
       </section>
@@ -96,7 +108,7 @@
     </main>
 
     <footer class="site-footer">
-      <p>© <span id="year"></span> 我的个人博客</p>
+      <p>© <span id="year"></span> 小狗蛋你的博客</p>
       <a href="#">回到顶部</a>
     </footer>
 
