@@ -354,6 +354,23 @@ h2 {
   font-size: 1.03rem;
 }
 
+.formula {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 10px 0 12px;
+  padding: 9px 12px;
+  overflow-x: auto;
+  border: 1px solid rgba(47, 111, 115, 0.2);
+  border-radius: 6px;
+  background: rgba(220, 238, 255, 0.42);
+  color: #18383b;
+  font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+  font-size: 0.96rem;
+  line-height: 1.55;
+  white-space: nowrap;
+}
+
 .about {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
